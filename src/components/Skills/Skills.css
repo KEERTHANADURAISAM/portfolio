@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=Foldit&family=League+Spartan:wght@500&family=Literata:wght@300;400&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
+.skill-container{
+    height:750px;
+    width: 100%;
+    border-bottom:1px solid whitesmoke ;
+
+}
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(2,580px);
+}
+.skill-header{
+margin-top: 10px;
+margin-left: 200px;
+font-family:  cursive;
+font-size: 50px;
+font-weight: bolder;
+letter-spacing: 2px;
+color:plum;
+}
+.skill-home-img{
+    margin-left: 50px;
+     height: 550px;
+     width: 550px;
+     /* margin-top: 10px; */
+ }
+.tech-icon-card{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    margin-left: 270px;
+    margin-top: 50px;
+    gap: 25px;
+}
+.tech-icon-div{
+    display: grid;
+    grid-template-rows: repeat(2,80px);
+}
+.tech-icon{
+    height: 50px;
+    width: 50px;
+}
+.tech-span{
+    margin-left: 5px;
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tech-img-card{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    /* height: 100px;
+    width: 100px; */
+    gap: 50px;
+    /* margin-top: 100px; */
+    margin-left: 190px;
+    
+}
+
+
+.skill-card span{
+    display: grid;
+    grid-template-rows: repeat(2,100px);
+color: blueviolet;
+    
+}
+.tech-img{
+    
+    /* padding: 10px; */
+    height: 60px;
+    width: 60px;
+}
+.tech-git-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}

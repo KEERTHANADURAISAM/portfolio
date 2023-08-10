@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
+.contact-container{
+    height:700px;
+    width: 100%;
+    border-bottom:1px solid whitesmoke ;
+}
+.contact-div{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 600px;
+}
+.contact-div h1{
+    color:#eecfaf;
+    font-family: 'Aclonica', sans-serif;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+.contact-lable{
+    font-family: 'Slackey', cursive;
+    color: rgb(184, 223, 232);
+    font-size: 25px;
+}
+.contact-input{
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(71, 66, 66);
+    box-shadow: 2px 2px  rgb(113, 115, 114);
+    color: rgb(243, 238, 183);
+}
+.contact-textarea{
+    width: 500px;
+ margin-top: 15px;
+ font-size: 20px;
+ letter-spacing: 2px;
+ color: rgb(243, 238, 183);
+    background-color: rgb(71, 66, 66);
+    box-shadow: 2px 2px  rgb(113, 115, 114);
+}
+.contact-btn{
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    background-color: rgb(71, 66, 66);
+    color: #eecfaf;
+    border: 2px solid #eecfaf;
+    font-family: 'Aclonica', sans-serif;
+}
+.contact-btn:hover{
+background-color:#eecfaf;
+color: rgb(50, 45, 45);
+}
+.foo-span{
+    margin-top: 30px;
+    margin-left: 150px;
+    color:#706e6c;
+}
+   
