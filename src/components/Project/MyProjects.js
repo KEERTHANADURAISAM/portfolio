@@ -16,6 +16,7 @@ import pro5 from './ProjectStickers/eye-test.png'
 import pro6 from './ProjectStickers/gym.png'
 import pro7 from './ProjectStickers/wishlist.png'
 import pro8 from './ProjectStickers/street-market.png'
+import { Link } from 'react-router-dom';
 const MyProjects = () => {
   return (
 <main className='project-main-container'>
@@ -37,6 +38,9 @@ const MyProjects = () => {
 <div className='project-card'>
 
 <img src={pro1} alt='' className='project-main-imgs'/>
+<div>
+<a href='https://portfolio1sanjay.netlify.app/'>wepage</a>
+</div>
 </div>
 <div className='project-card'>
 
@@ -47,12 +51,16 @@ const MyProjects = () => {
 <img src={pro3} alt='' className='project-main-imgs'/>
 </div>
 <div className='project-card'>
-
-<img src={pro4} alt='' className='project-main-imgs'/>
+<img src={pro8} alt='' className='project-main-imgs'/>
 </div>
+
 <div className='project-card'>
 
 <img src={pro5} alt='' className='project-main-imgs'/>
+</div>
+<div className='project-card'>
+
+<img src={pro4} alt='' className='project-main-imgs'/>
 </div>
  <div className='project-card'>
 <img src={pro6} alt='' className='project-main-imgs'/>
@@ -60,9 +68,7 @@ const MyProjects = () => {
 <div className='project-card'>
 <img src={pro7} alt='' className='project-main-imgs'/>
 </div>
-<div className='project-card'>
-<img src={pro8} alt='' className='project-main-imgs'/>
-</div>
+
 
             </div>
         </section>

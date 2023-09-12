@@ -68,13 +68,18 @@
   margin-left: 280px;
 }
 .project-card {
+    height: 160px;
+    width:160px;
   padding: 5px;
   border-radius: 10px;
   border: 1px solid black;
-  /* background: linear-gradient(to right,plum, rgb(3, 250, 225)); */
+  position: relative;
+  background: linear-gradient(to right,plum, rgb(3, 250, 225));
 }
 .project-main-imgs {
-  
   min-height: 150px;
   max-width: 150px;
+}
+.project-card:hover{
+    height: 180px;
 }
