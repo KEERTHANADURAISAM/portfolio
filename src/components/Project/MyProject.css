@@ -1,5 +1,5 @@
 .project-main-container {
-  min-height: 820px;
+  min-height: 720px;
   max-width: 100%;
   cursor: pointer;
 }
@@ -64,17 +64,17 @@
   display: grid;
   grid-template-columns: repeat(4, 150px);
   gap: 80px;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-left: 280px;
 }
 .project-card {
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   border: 1px solid black;
   /* background: linear-gradient(to right,plum, rgb(3, 250, 225)); */
 }
 .project-main-imgs {
-  padding: 15px;
+  
   min-height: 150px;
   max-width: 150px;
 }
