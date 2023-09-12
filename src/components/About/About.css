@@ -1,70 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&display=swap');
-.about-container-grid{
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&display=swap");
+.about-container-grid {
   display: grid;
-  grid-template-columns: repeat(2,680px);
-  
+  grid-template-columns: repeat(2, 680px);
 }
 
-.about-container{
-    height:700px;
-    width: 100%;
-    border-bottom:1px solid whitesmoke ;
-   
+.about-container {
+  height: 700px;
+  width: 100%;
 }
-.about-content{
-  
-    display: flex;
-  margin-left:150px;
-    margin-top: 140px;
+.about-content {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 140px;
 }
-.about-content h1{
-  font-family: 'Sedgwick Ave Display', cursive;
+.about-content h1 {
+  font-family: "Sedgwick Ave Display", cursive;
   font-size: 55px;
   color: #eecfaf;
   letter-spacing: 3px;
 }
-.about-text{
-display: flex;
-margin-top: 40px;
-margin-left: 50px;
-padding: 20px;
-text-align: start;
-/* letter-spacing: 3px; */
-font-family: 'League Spartan', sans-serif;
-font-size: 25px;
-letter-spacing: 2px;
-color: rgb(221, 128, 144);
+.about-text {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding: 20px;
+  text-align: start;
+  /* letter-spacing: 3px; */
+  font-family: "League Spartan", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: rgb(221, 128, 144);
 }
-.about-content:hover h1{
-    animation:  shake 0.8s  ;
+.about-content:hover h1 {
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(10px);
   }
-  
-  @keyframes shake{
-    0%{
-      transform: translateY(10px)
-    }
-    25%{
-      transform: translateY(25px);
-    }
-      
-    50%{
-      transform: translateY(-25px);
-    }
-    100%{
-      transform: translateY(10px);
-    }
+  25% {
+    transform: translateY(25px);
   }
-  .about-img-div{
-    margin-top: 100px;
-    margin-left: 210px;
-    
+
+  50% {
+    transform: translateY(-25px);
   }
-  .about-img{
-    /* animation:  shake 0.9s  ; */
-    height: 400px;
-    width: 400px;
+  100% {
+    transform: translateY(10px);
   }
-  .about-img-div:hover img{
-    animation:  shake 0.9s  ;
-  }
+}
+.about-img-div {
+  margin-top: 150px;
+  margin-left: 240px;
+}
+.about-img {
+  height: 400px;
+  width: 400px;
+}
+.about-img-div:hover img {
+  animation: shake 0.9s;
+}

@@ -2,7 +2,7 @@
 .skill-container{
     height:750px;
     width: 100%;
-    border-bottom:1px solid whitesmoke ;
+    
 
 }
 .skill-grid{
@@ -22,7 +22,7 @@ color:plum;
     margin-left: 50px;
      height: 550px;
      width: 550px;
-     /* margin-top: 10px; */
+     
  }
 .tech-icon-card{
     display: grid;
