@@ -62,10 +62,10 @@
 }
 .projects-main-div {
   display: grid;
-  grid-template-columns: repeat(4, 190px);
+  grid-template-columns: repeat(4, 150px);
   gap: 80px;
   margin-top: 80px;
-  margin-left: 250px;
+  margin-left: 280px;
 }
 .project-card {
   padding: 10px;

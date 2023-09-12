@@ -13,8 +13,9 @@ import pro2 from './ProjectStickers/telegram.png'
 import pro3 from './ProjectStickers/configuration.png'
 import pro4 from './ProjectStickers/flower-shop.png'
 import pro5 from './ProjectStickers/eye-test.png'
-import pro6 from './ProjectStickers/wishlist.png'
-import pro7 from './ProjectStickers/barbell.png'
+import pro6 from './ProjectStickers/gym.png'
+import pro7 from './ProjectStickers/wishlist.png'
+import pro8 from './ProjectStickers/street-market.png'
 const MyProjects = () => {
   return (
 <main className='project-main-container'>
@@ -60,7 +61,7 @@ const MyProjects = () => {
 <img src={pro7} alt='' className='project-main-imgs'/>
 </div>
 <div className='project-card'>
-<img src={pro6} alt='' className='project-main-imgs'/>
+<img src={pro8} alt='' className='project-main-imgs'/>
 </div>
 
             </div>
