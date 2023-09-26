@@ -1,85 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Cabin&family=Caveat:wght@700&family=Cinzel:wght@400;500&family=Dancing+Script:wght@400;500&family=Foldit&family=League+Spartan:wght@500&family=Literata:wght@300;400&family=Noto+Serif+NP+Hmong:wght@500&family=Outfit:wght@900&family=Pacifico&family=Paytone+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&family=Ultra&display=swap");
+
 .project-main-container {
-  min-height: 720px;
+  min-height: 820px;
   max-width: 100%;
-  cursor: pointer;
+  border: 1px solid white;
 }
 .project-header {
-  display: inline-flex;
-  margin-left: 430px;
-  margin-top: 30px;
-  gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-heading {
+  color:#d53a9d;
+  font-family: "Ultra", serif;
+  letter-spacing: 5px;
+  font-size: 45px;
+}
+
+@media (max-width: 600px) {
+  .project-heading {
+    font-size: 40px;
+  }
+}
+
+.project-card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 200px;
+  border: 1px solid ;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  margin-left: 20px;
 }
 .project-img {
-  min-height: 50px;
-  max-width: 50px;
-  animation: ball 3s cubic-bezier(0.34, 1.56, 0.64, 1) 0s infinite alternate
-    forwards;
+  height: 150px;
+  width: 150px;
+  padding: 20px;
 }
-@keyframes ball {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateY(-45px);
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  40% {
-    animation-timing-function: ease-in;
-    transform: translateY(-24px);
-  }
-
-  65% {
-    animation-timing-function: ease-in;
-    transform: translateY(-12px);
-  }
-
-  82% {
-    animation-timing-function: ease-in;
-    transform: translateY(-6px);
-  }
-
-  93% {
-    animation-timing-function: ease-in;
-    transform: translateY(-4px);
-  }
-
-  25%,
-  55%,
-  75%,
-  87% {
-    animation-timing-function: ease-out;
-    transform: translateY(0px);
-  }
-
-  100% { 
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.project-source {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.projects-main-div {
-  display: grid;
-  grid-template-columns: repeat(4, 150px);
-  gap: 80px;
-  margin-top: 30px;
-  margin-left: 280px;
-}
-.project-card {
-    height: 160px;
-    width:160px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid black;
-  position: relative;
-  background: linear-gradient(to right,plum, rgb(3, 250, 225));
-}
-.project-main-imgs {
-  min-height: 150px;
-  max-width: 150px;
-}
-.project-card:hover{
-    height: 180px;
+.project-btn {
+  padding:8px;
+  border: none;
+  width: 160px;
+  background-color: black;
+  color:#743ad5;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+border-radius: 10px;
 }

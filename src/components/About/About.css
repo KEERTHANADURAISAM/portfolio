@@ -6,13 +6,13 @@
 }
 
 .about-container {
-  height: 700px;
+  height: 750px;
   width: 100%;
 }
 .about-content {
   display: flex;
   margin-left: 150px;
-  margin-top: 140px;
+  margin-top: 200px;
 }
 .about-content h1 {
   font-family: "Sedgwick Ave Display", cursive;
@@ -52,7 +52,7 @@
   }
 }
 .about-img-div {
-  margin-top: 150px;
+  margin-top: 170px;
   margin-left: 240px;
 }
 .about-img {
@@ -61,4 +61,14 @@
 }
 .about-img-div:hover img {
   animation: shake 0.9s;
+}
+@media screen and (max-width:480px) {
+  .about-container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 480px);
+    }
+    .about-img-div {
+      margin-top: 170px;
+      margin-left: 50px;
+    }
 }

@@ -13,9 +13,9 @@ import git from './branch.png'
 import skill from'./14284d_2cb43613a8c74caf8e18755236501525~mv2.gif'
 import github from './letter-g (1).png'
 import netlifY from './letter-n.png'
-const Skills = () => {
+const Skills = ({pageRefs}) => {
   return (
-    <div className='skill-container'>
+    <div className='skill-container' ref={el=>pageRefs.current={...pageRefs.current,skills:el}}>
     <div className='skill-grid'> 
      <div>    
      <h1 className='skill-header'>Tech Stacks</h1>

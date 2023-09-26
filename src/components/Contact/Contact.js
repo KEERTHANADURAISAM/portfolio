@@ -3,7 +3,7 @@ import "./Contact.css";
 import TextArea from "antd/es/input/TextArea";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({pageRefs}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -38,7 +38,7 @@ const Contact = () => {
       });
   };
   return (
-    <form onSubmit={handleSubmit} className="emailForm">
+    <form onSubmit={handleSubmit} className="emailForm" ref={el => (pageRefs.current = { ...pageRefs.current, contact: el })}>
       <div className="contact-container">
         <div className="contact-div">
           <h1>

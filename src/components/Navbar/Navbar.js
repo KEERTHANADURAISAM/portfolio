@@ -1,74 +1,23 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "./logo.jpg";
-import { Link } from "react-scroll";
 
-const Navbar = () => {
+
+const Navbar = ({pageRefs}) => {
+  function scrollIntoView(type) {
+    pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div className="main-container">
       <nav className="nav-bar">
         <img src={logo} className="logo" />
         <ul className="nav-ul">
-          <li>
-            <Link
-              to="home"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={250}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="About"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={250}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="Skills"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={3500}
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="Projects"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={4500}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="contact"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={4500}
-            >
-              Contact
-            </Link>
-          </li>
+        <label onClick={() => scrollIntoView("home")}>Home</label>
+        <label onClick={() => scrollIntoView("about")}>About</label>
+        <label onClick={() => scrollIntoView("skills")}> Skills</label>
+        <label onClick={() => scrollIntoView("project")}>Project</label>
+        <label onClick={() => scrollIntoView("contact")}>Contact Us</label>
+          
         </ul>
       </nav>
     </div>

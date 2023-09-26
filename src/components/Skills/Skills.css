@@ -2,15 +2,13 @@
 .skill-container{
     height:750px;
     width: 100%;
-    
-
 }
 .skill-grid{
     display: grid;
     grid-template-columns: repeat(2,580px);
 }
 .skill-header{
-margin-top: 10px;
+    margin-top: 180px;
 margin-left: 200px;
 font-family:  cursive;
 font-size: 50px;
@@ -20,15 +18,15 @@ color:plum;
 }
 .skill-home-img{
     margin-left: 50px;
-     height: 550px;
-     width: 550px;
+     height: 500px;
+     width: 500px;
      
  }
 .tech-icon-card{
     display: grid;
     grid-template-columns: repeat(4,100px);
     margin-left: 270px;
-    margin-top: 50px;
+    margin-top: 200px;
     gap: 25px;
 }
 .tech-icon-div{
@@ -36,15 +34,38 @@ color:plum;
     grid-template-rows: repeat(2,80px);
 }
 .tech-icon{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 .tech-span{
     margin-left: 5px;
     color: blueviolet;
 }
 
-
+@media screen and  (max-width: 480px) {
+    .skill-grid{
+        display: grid;
+        grid-template-columns: repeat(2,380px);       
+    }
+    .skill-home-img{
+        
+         height: 400px;
+         width: 400px;
+         
+     }
+    .tech-icon{
+        height: 50px;
+        width: 50px;
+    }
+    .tech-icon-card{
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        margin-left: 200px;
+        margin-top: 150px;
+        gap: 20px;
+        
+    }
+}
 
 
 
