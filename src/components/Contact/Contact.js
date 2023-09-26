@@ -68,7 +68,7 @@ const Contact = ({pageRefs}) => {
           <br></br>
           <label className="contact-lable">Message</label>
           <TextArea
-            rows={4}
+            rows={3}
             maxLength={100}
             className="contact-textarea"
             value={message}

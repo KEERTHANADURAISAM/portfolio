@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 130px;
 }
 .project-heading {
   color:#d53a9d;
@@ -17,11 +18,7 @@
   font-size: 45px;
 }
 
-@media (max-width: 600px) {
-  .project-heading {
-    font-size: 40px;
-  }
-}
+
 
 .project-card-div {
   display: flex;
@@ -57,4 +54,9 @@
   border-width: 3px;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 border-radius: 10px;
+}
+@media screen (min-width: 320px) and (max-width: 480px){
+  .project-header {
+    margin-top:340px;
+  }
 }

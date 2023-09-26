@@ -89,7 +89,7 @@
   background-color: black;
   border: #d4b596;
 }
-@media screen and (max-width: 480px) {
+@media screen and  (min-width: 320px) and (max-width: 480px) {
   .home-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 500px);

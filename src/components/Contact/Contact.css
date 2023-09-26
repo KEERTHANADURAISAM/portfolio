@@ -70,3 +70,29 @@
   margin-left: 150px;
   color: #706e6c;
 }
+@media screen and  (min-width: 320px) and (max-width: 480px) {
+  .contact-div{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   margin-top: 80px;
+  }
+  .input-fields{
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .contact-input{
+    width:370px;
+  }
+  .contact-textarea{
+    width: 370px;
+  }
+  .contact-btn{
+    margin-left: 120px;
+  }
+  .foo-span{
+    margin-left: 100px;
+  }
+}
