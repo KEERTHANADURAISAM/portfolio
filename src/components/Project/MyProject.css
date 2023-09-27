@@ -17,9 +17,6 @@
   letter-spacing: 5px;
   font-size: 45px;
 }
-
-
-
 .project-card-div {
   display: flex;
   flex-direction: column;
@@ -56,7 +53,16 @@
 border-radius: 10px;
 }
 @media screen (min-width: 320px) and (max-width: 480px){
-  .project-header {
-    margin-top:340px;
+  .project-heading{
+    font-size: 15px;
+    color:yellow;
+  }
+  .project-card-div{
+    height: 250px;
+  width: 100px;
+  margin-top: 40px;
+  }
+  .project-btn{
+    width:100px;
   }
 }

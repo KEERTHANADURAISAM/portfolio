@@ -84,7 +84,7 @@
     padding: 20px;
   }
   .contact-input{
-    width:370px;
+    width:350px;
   }
   .contact-textarea{
     width: 370px;
@@ -93,6 +93,6 @@
     margin-left: 120px;
   }
   .foo-span{
-    margin-left: 100px;
+    margin-left: 80px;
   }
 }
