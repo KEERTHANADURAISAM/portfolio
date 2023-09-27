@@ -92,13 +92,13 @@
 @media screen and  (min-width: 320px) and (max-width: 480px) {
   .home-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 330px);
+    grid-template-columns: repeat(2,250px);
   }
   .home-content {
     display: flex;
     flex-direction: column;
     margin-top: 250px;
-    /* margin-left: 0; */
+    margin-left: 8px;
   }
   .header-h1{
     font-size: 25px;
@@ -106,22 +106,39 @@
   }
   .header-h2{
     font-size:20px;
-    letter-spacing: 4px;
+    letter-spacing:3px;
+    margin-left: 0;
     
   }
   .header-h3 {
-    font-size: 22px;
+    font-size:20px;
     margin-left:0;
+    margin-top: 50px;
   }
   .home-user-img {
     margin-left: 0;
   }
   .img-home {
-    height: 220px;
-    width: 220px;
-    margin:0;
+    height: 180px;
+    width: 180px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 80px;
   }
   .home-imgs {
-    margin-left: 3px;
+    display:flex;
+    margin-left: 25px;
+  margin-top: 40px;
   }
+    .git-img{
+      height: 40px;
+      width: 40px;
+     }
+     .link-img {
+      height: 40px;
+      width: 40px;
+    }
+    .home-btn-resume{
+      width: 100px;
+    }
 }

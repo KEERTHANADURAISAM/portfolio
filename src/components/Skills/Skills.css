@@ -66,8 +66,9 @@ color:plum;
     .tech-icon-card{
         display: grid;
         grid-template-columns: repeat(4,80px);     
-margin-top: 5px;
-margin-left: 5px;       
+margin-top: 10px;
+margin-left:20px;
+padding: 5px;       
     }
     .tech-icon-div{
         display: grid;
