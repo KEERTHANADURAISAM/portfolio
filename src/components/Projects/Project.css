@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Cabin&family=Caveat:wght@700&family=Cinzel:wght@400;500&family=Dancing+Script:wght@400;500&family=Foldit&family=League+Spartan:wght@500&family=Lilita+One&family=Literata:wght@300;400&family=Noto+Serif+NP+Hmong:wght@500&family=Outfit:wght@900&family=Pacifico&family=Paytone+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&family=Ultra&display=swap");
+
+.project-main-container {
+  height: 700px;
+  min-width: 100%;
+  margin-top: 170px;
+}
+.project-sub-div {
+  margin-top: 80px;
+}
+.project-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.project-header {
+  color: #ffcad4;
+  font-family: "Lilita One";
+  font-size: 55px;
+  letter-spacing: 3px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 280px;
+  background-color: #565177;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+.project-head {
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #ffcad4;
+  font-family: "Lilita One";
+  font-size: 22px;
+}
+.pro-img {
+  height: 200px;
+  width: 200px;
+}
+.pro-source {
+  text-decoration: none;
+  color: #ffcad4;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px;
+  font-family: "Lilita One";
+  background-color: #5d558a;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #565177;
+}
+.pro-live {
+  padding: 3px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pro-live-site {
+  padding: 3px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 19px;
+}
+.project-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.75);
+  transition: width 3s;
+  transform: translateY(5px);
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 80px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 220px;
+  }
+  .project-head {
+    border: none;
+    margin: 5px;
+    padding: 5px;
+
+    font-size: 20px;
+    color: #ffcad4;
+    font-family: "Lilita One";
+    font-size: 22px;
+  }
+  .pro-img {
+    height: 100px;
+    width: 100px;
+  }
+}

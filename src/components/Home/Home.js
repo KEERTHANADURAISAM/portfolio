@@ -19,9 +19,9 @@ const Home = ({pageRefs}) => {
           <h2 className="header-h2">Full Stack Developer</h2>
         </div>
         <div className="home-imgs">
-          <img src={git} className="git-img" />
-          <img src={linkedin} className="link-img" />
-          <button className="home-btn-resume">Resume</button>
+         <a href="https://github.com/KEERTHANADURAISAM" target="_blank"><img src={git} className="git-img" /></a> 
+         <a href="https://www.linkedin.com/in/keerthana-durai-b67a40253/" target="_blank"> <img src={linkedin} className="link-img" /></a>
+         <a href="https://drive.google.com/file/d/1sck1l99KOIO9kGKGD0LW6VyW3ZLq_NFH/view?usp=drive_link" target="_blank"> <button className="home-btn-resume">Resume</button></a>
         </div>
       </div>
       <div className="home-user-img">

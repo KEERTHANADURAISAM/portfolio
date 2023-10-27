@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap");
 .contact-container {
-  height: 700px;
+  height: 600px;
   width: 100%;
   border-bottom: 1px solid whitesmoke;
 }
 .contact-div {
   display: flex;
-  margin-top: 40px;
+  margin-top: 140px;
   margin-left: 600px;
 }
 .contact-div h1 {
   color: #eecfaf;
-  font-family: "Aclonica", sans-serif;
+  font-family: "Aclonica";
 }
 .input-fields {
   display: flex;
@@ -21,7 +21,7 @@
   margin-top: 30px;
   }
 .contact-lable {
-  font-family: "Slackey", cursive;
+  font-family: cursive;
   color: rgb(184, 223, 232);
   font-size: 25px;
 }
@@ -76,15 +76,16 @@
    justify-content: center;
    align-items: center;
    margin: 0;
-   margin-top: 80px;
+   margin-top: 180px;
   }
   .input-fields{
     margin: 0;
     margin-top: 20px;
     padding: 20px;
+    margin-left: 30px;
   }
   .contact-input{
-    width:350px;
+    width:370px;
   }
   .contact-textarea{
     width: 370px;

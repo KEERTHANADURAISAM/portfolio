@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./Contact.css";
 import TextArea from "antd/es/input/TextArea";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
-const Contact = ({pageRefs}) => {
+const Contact = ({ pageRefs }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -37,8 +38,17 @@ const Contact = ({pageRefs}) => {
         console.error("Error sending email:", error);
       });
   };
+  const notify = (name, email, message) => {
+    if (name && message && email !== "") {
+      toast.success("Message Send Successfully");
+    }
+  };
   return (
-    <form onSubmit={handleSubmit} className="emailForm" ref={el => (pageRefs.current = { ...pageRefs.current, contact: el })}>
+    <form
+      onSubmit={handleSubmit}
+      className="emailForm"
+      ref={(el) => (pageRefs.current = { ...pageRefs.current, contact: el })}
+    >
       <div className="contact-container">
         <div className="contact-div">
           <h1>
@@ -74,9 +84,16 @@ const Contact = ({pageRefs}) => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button type="submit" className="contact-btn">
-            Send 
+          <button
+            type="submit"
+            className="contact-btn"
+            onClick={() => {
+              notify(name, message, email);
+            }}
+          >
+            Send
           </button>
+          <Toaster />
           <span className="foo-span">©Keerthana.All right reserved</span>
         </div>
       </div>

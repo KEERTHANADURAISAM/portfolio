@@ -4,7 +4,7 @@
   grid-template-columns: repeat(2, 580px);
 }
 .home-container {
-  height: 700px;
+  height: 500px;
   width: 100%;
   cursor: pointer;
   /* border-bottom: 1px solid whitesmoke; */
@@ -67,7 +67,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 350px;
-  margin-top: 190px;
+  margin-top: 270px;
 }
 .img-home {
   border-radius: 15px;
@@ -83,6 +83,7 @@
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
+  padding: 8px;
 }
 .home-btn-resume:hover {
   color: #d4b596;
@@ -90,6 +91,9 @@
   border: #d4b596;
 }
 @media screen and  (min-width: 320px) and (max-width: 480px) {
+  .home-container{
+    height: 600px;
+  }
   .home-grid-container {
     display: grid;
     grid-template-columns: repeat(2,250px);

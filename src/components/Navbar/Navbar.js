@@ -12,8 +12,9 @@ const Navbar = ({pageRefs}) => {
       <nav className="nav-bar">
         <img src={logo} className="logo" />
         <ul className="nav-ul">
+          
         <label onClick={() => scrollIntoView("home")}>Home</label>
-        <label onClick={() => scrollIntoView("about")}>About</label>
+        <label onClick={() => scrollIntoView("about")}>About</label>     
         <label onClick={() => scrollIntoView("skills")}> Skills</label>
         <label onClick={() => scrollIntoView("project")}>Project</label>
         <label onClick={() => scrollIntoView("contact")}>Contact Us</label>
