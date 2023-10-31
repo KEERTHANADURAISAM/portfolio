@@ -52,11 +52,12 @@ const Contact = ({ pageRefs }) => {
       ref={(el) => (pageRefs.current = { ...pageRefs.current, contact: el })}
     >
        <motion.div
-          variants={fadeIn("down", 0.3)}
+          variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="contact-container">
+          
+         className="contact-container">
         <div className="contact-div">
           <h1>
             Contact <span>Me</span>

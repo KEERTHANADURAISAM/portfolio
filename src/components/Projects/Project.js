@@ -8,10 +8,7 @@ import img5 from "./img/work-order.png";
 import { motion } from "framer-motion";
 const Project = ({ pageRefs }) => {
   return (
-    <motion.div  whileHover={{ scale: 1.2 }}
-    whileTap={{ scale: 1.1 }}
-    drag="x"
-    dragConstraints={{ left: -10, right: 10 }} >
+   
     <main
       className="project-main-container"
       ref={(el) => (pageRefs.current = { ...pageRefs.current, project: el })}
@@ -145,7 +142,7 @@ const Project = ({ pageRefs }) => {
         </div>
       </section>
     </main>
-    </motion.div>
+    
   );
 };
 
