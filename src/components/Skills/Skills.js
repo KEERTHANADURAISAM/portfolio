@@ -13,15 +13,29 @@ import git from './branch.png'
 import skill from'./14284d_2cb43613a8c74caf8e18755236501525~mv2.gif'
 import github from './letter-g (1).png'
 import netlifY from './letter-n.png'
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 const Skills = ({pageRefs}) => {
   return (
     <div className='skill-container' ref={el=>pageRefs.current={...pageRefs.current,skills:el}}>
+
     <div className='skill-grid'> 
-     <div>    
+    <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          
+        >  
      <h1 className='skill-header'>Tech Stacks</h1>
      <img src={skill} className='skill-home-img'/>
-     </div>
-     <div className='tech-icon-card'>
+     </motion.div>
+     <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className='tech-icon-card'> 
       <div className='tech-icon-div'>
         <img src={html} className='tech-icon'/>
         <span className='tech-span'>HTML</span>
@@ -70,11 +84,11 @@ const Skills = ({pageRefs}) => {
         <img src={post} className='tech-icon'/>
         <span className='tech-span'>POSTMAN</span>
         </div> 
-     </div>
+        </motion.div>
          
     
     </div>
-   
+    
       </div>
    
   )

@@ -5,8 +5,13 @@ import img2 from "./img/treadmill.png";
 import img3 from "./img/sunglasses.png";
 import img4 from "./img/chat.png";
 import img5 from "./img/work-order.png";
+import { motion } from "framer-motion";
 const Project = ({ pageRefs }) => {
   return (
+    <motion.div  whileHover={{ scale: 1.2 }}
+    whileTap={{ scale: 1.1 }}
+    drag="x"
+    dragConstraints={{ left: -10, right: 10 }} >
     <main
       className="project-main-container"
       ref={(el) => (pageRefs.current = { ...pageRefs.current, project: el })}
@@ -140,6 +145,7 @@ const Project = ({ pageRefs }) => {
         </div>
       </section>
     </main>
+    </motion.div>
   );
 };
 

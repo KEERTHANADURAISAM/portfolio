@@ -3,6 +3,8 @@ import "./Contact.css";
 import TextArea from "antd/es/input/TextArea";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Contact = ({ pageRefs }) => {
   const [name, setName] = useState("");
@@ -49,7 +51,12 @@ const Contact = ({ pageRefs }) => {
       className="emailForm"
       ref={(el) => (pageRefs.current = { ...pageRefs.current, contact: el })}
     >
-      <div className="contact-container">
+       <motion.div
+          variants={fadeIn("down", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="contact-container">
         <div className="contact-div">
           <h1>
             Contact <span>Me</span>
@@ -96,7 +103,7 @@ const Contact = ({ pageRefs }) => {
           <Toaster />
           <span className="foo-span">©Keerthana.All right reserved</span>
         </div>
-      </div>
+        </motion.div>
     </form>
   );
 };

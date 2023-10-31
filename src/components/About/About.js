@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css";
 import me from "./lady avatar.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+
 const About = ({pageRefs}) => {
   return (
     <div className="about-container-grid" ref={el=>pageRefs.current={...pageRefs.current,about:el}}>
@@ -19,10 +22,15 @@ const About = ({pageRefs}) => {
           </h3>
         </div>
       </div>
-      <div className="about-img-div">
+      <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+           className="about-img-div">
         <img src={me} className="about-img" />
-        {/* <img src='https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif'/> */}
-      </div>
+       
+        </motion.div>
     </div>
   );
 };
