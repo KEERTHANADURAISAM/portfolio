@@ -21,7 +21,7 @@ const Home = ({pageRefs}) => {
         <div className="home-imgs">
          <a href="https://github.com/KEERTHANADURAISAM" target="_blank"><img src={git} className="git-img" /></a> 
          <a href="https://www.linkedin.com/in/keerthana-durai-b67a40253/" target="_blank"> <img src={linkedin} className="link-img" /></a>
-         <a href="https://drive.google.com/file/d/1NzOogVzEhh8iFg57KmIEMNkx_Cr3_S4q/view?usp=drive_link"> <button className="home-btn-resume">Resume</button></a>
+         <a href="https://drive.google.com/file/d/1NzOogVzEhh8iFg57KmIEMNkx_Cr3_S4q/view?usp=drive_link" target="_blank"> <button className="home-btn-resume">Resume</button></a>
         </div>
       </div>
       <div className="home-user-img">
